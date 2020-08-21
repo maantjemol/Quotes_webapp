@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    background: #1D1D1D;
+    color: white;
+    text-align: center;
+    padding-top: 15em;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4rem;
+}
+
+input[type=button]{
+    font-family: 'Roboto Mono', monospace;
+    background-color: #76FF84;
+    border: none;
+    color: black;
+    padding: 0.2em 2em;
+    border-radius: 1em;
+    font-size: 2em;
+}
