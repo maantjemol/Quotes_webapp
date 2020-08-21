@@ -5,13 +5,14 @@ const quote = require('./get_quote')
 
 app.get('/api/quote', function (req, res) {
   res.set('Access-Control-Allow-Origin', '*');
-  console.log(`serving ${req.params.words} words`);
+  // console.log(`serving ${req.params.words} words`);
   //creating the response quote from get_quote.js:
-  res.send(JSON.stringify({quote: quote.ran_quote("./quotes.txt")}));
-  console.log("HTTP Get request recieved")
+  _quote = JSON.stringify({quote: quote.ran_quote("./quotes.txt")})
+  res.send(_quote);
+  console.log(`HTTP Get request recieved, send JSON: ${_quote}`)
 });
 
 app.listen(3000, function () {
-  console.log('Example app listening on port 3000');
+  console.log('listening on port 3000');
 });
 
